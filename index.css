@@ -216,12 +216,14 @@ body{
     align-items: flex-start;
     gap: 30px;
     white-space: nowrap;
+    white-space: nowrap;
 }
 .arrow{
-    transform: translateY(-20px);
+
+    transform: translateY(0px);
 }
 .arrow img:last-child{
-    transform: translateX(-70px);
+    transform: translateX(-50px);
 }
 .right-intro-s1 p{
     color: #FFF;
@@ -759,12 +761,19 @@ font-size: 45px;
     font-size: 12px;
 }
 .slider-card-img img{
+    width: 120px;
+    height: 120px;
+}
+.slider-card-img-bg svg{
     width: 150px;
     height: 150px;
 }
-.slider-card-img-bg svg{
-    width: 175px;
-    height: 175px;
+.slider-card-img-bg{
+    left: -15px;
+}
+.slider-card-img{
+    top: 10px;
+    left: 0px;
 }
 .intro-section-3{
     gap: 0px;
@@ -772,6 +781,7 @@ font-size: 45px;
 .intro-s-heading3{
     font-size: 30px;
 }
+
 .arrow-component-3 .arrow img:first-child{
     width: 100px;
 }
@@ -783,6 +793,7 @@ font-size: 45px;
 }
 .arrow-component-3 .arrow{
    margin-top: 10px;
+   
 }
 .arrow-component-3 .arrow {
     transform:translateX(-20px);
@@ -862,6 +873,24 @@ margin-top: 100px;
         position: relative;
         margin-top: 50px;
     }
+    .hero-section{
+        width: 100%;
+        overflow: hidden;
+    }
+    .right-hs-line1 svg{
+        width: 316px;
+        height: 709px;
+     }
+     .right-hs-line2 svg{
+        width: 617px;
+        height: 352px;
+     }
+     .right-hs-line3 svg{
+        width: 347px;
+        height: 562px;
+     }
+    
+    
     .bottom-hero-section{
         display: none;
     }
@@ -919,6 +948,7 @@ margin-top: 100px;
         margin-top: 26px;
         margin-bottom: 50px;
         z-index: 1;
+        max-width: 400px;
     }
     .slider-button-prev{
         position: absolute;
@@ -933,6 +963,9 @@ margin-top: 100px;
         top: 50%;
         transform: translateY(-50%);
         z-index: 2;
+    }
+    .slider-card p {
+        max-width: 300px;
     }
     .slider-card .btn {
         padding: 15px 80px;
@@ -956,12 +989,14 @@ margin-top: 100px;
     .build-steps-section{
         display: none;
     }
-
+    .scroll-btn{
+        display: none;
+     }
 
     .label-slider{
         display: block;
         position: relative;
-        margin-top: 37px;
+        margin:40px 0;
     }
     .label-slider .swiper-wrapper img{
         height: 200px;
@@ -982,6 +1017,9 @@ margin-top: 100px;
         transform: translateY(-50%);
         z-index: 2;
      }
+      .scroll-btn{
+      display: none;
+       }
 
 
 
@@ -1080,6 +1118,13 @@ margin-top: 100px;
      .banner-s-h2{
         font-size: 24px;
      }
+    .intro-section-3{
+        display: none;
+    }
+    form{
+        margin-top: 50px;
+        padding: 90px 60px;
+    }
      
     
 }
@@ -1223,9 +1268,7 @@ margin-top: 100px;
 
 
 
- .scroll-btn{
-    display: none;
- }
+
 
  .intro-section-3{
     width: 100%;
