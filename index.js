@@ -16,31 +16,40 @@ window.addEventListener('scroll', () => {
 })
 
 
-let currentIndex = 0;
-const slides = document.querySelectorAll('.slider-card');
-const totalSlides = slides.length;
-const sliderWrapper = document.querySelector('.slider-wrapper');
-const cardWidth = slides[0].offsetWidth;
-
-function changeSlide(direction) {
-  currentIndex += direction;
-
-  if (currentIndex < 0) {
-    currentIndex = totalSlides - 1;
-  } else if (currentIndex >= totalSlides) {
-    currentIndex = 0;
-  }
-
-  const transformValue = -currentIndex * 333;
-  sliderWrapper.style.transform = `translateX(${transformValue}px)`;
-}
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: ".right-swiper-btn",
+      prevEl: ".left-swiper-btn",
+    },
+  });
   
-// var swiper = new Swiper(".build-steps-section", {
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     loop: true,
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//   });
+  var swiper = new Swiper(".build-steps-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-next",
+        prevEl: ".swiper-prev",
+    },
+  });
+  var swiper = new Swiper(".label-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-label-next",
+        prevEl: ".swiper-label-prev",
+    },
+  });
+  var swiper = new Swiper(".slider-cards-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        nextEl: ".slider-button-next",
+        prevEl: ".slider-button-prev",
+    },
+  });

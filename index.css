@@ -185,6 +185,9 @@ body{
     font-weight: 400;
     margin: 0;
 }
+.mySwiper{
+    display: none;
+}
 .intro-section-1{
     display: flex;
     justify-content: space-between;
@@ -510,12 +513,14 @@ form .form-heading{
     font-size: 36px;
     font-weight: 700;
     color: #FFF;
+    
 }
 .form-title{
     color: #FFF;
     font-weight: 300;
     font-size: 36px;
     margin-bottom: 65px;
+    text-align: center;
 }
 
 .personal-info1{
@@ -649,6 +654,15 @@ footer{
 .next-button{
     display: none;
 }
+.slider-cards-swiper{
+    display: none;
+}
+.label-slider{
+    display: none;
+}
+.build-steps-slider{
+    display: none;
+}
 
 @media screen and (max-width:1100px) {
 .navbar-main-container{
@@ -701,6 +715,7 @@ font-size: 45px;
     font-size: 12px;
     max-width: 90%;
 }
+
 .intro-section-1{
     gap: 0;
 }
@@ -838,10 +853,235 @@ margin-top: 100px;
     padding: 30px 50px;
 }
 
+
 }
 
 @media only screen and (max-width: 768px) {
+    .mySwiper{
+        display: flex;
+        position: relative;
+        margin-top: 50px;
+    }
+    .bottom-hero-section{
+        display: none;
+    }
+    .right-swiper-btn{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    .left-swiper-btn {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    .swiper-card{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        border-radius: 90px;
+        padding: 21px 36px;
+        background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+        box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+    }
 
+
+    .swiper-slide div h3{
+        display: none;
+    }
+    .swiper-slide div{
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .desc-h-text{
+        max-width: 220px;
+        text-align: center;
+        margin-top: 37px;
+    }
+    .swiper-slide div p{
+        font-size: 14px;
+        color: #FFF;
+        margin: 0;
+    }
+    .slider-cards{
+        display: none;
+    }
+    .slider-cards-swiper{
+        position: relative;
+        display: block;
+        margin-top: 26px;
+        margin-bottom: 50px;
+        z-index: 1;
+    }
+    .slider-button-prev{
+        position: absolute;
+        left:0px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    .slider-button-next{
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    .slider-card .btn {
+        padding: 15px 80px;
+    }
+     .slider-card{
+        width: 320px;
+        height: 511px;
+     }
+     .slider-card-img img{
+        width: 190.923px;
+        height: 190.923px;
+     }
+     .slider-card-img-bg svg{
+        width: 219px;
+        height: 219px;
+     }
+    .label-img-section{
+        display: none;
+    }
+
+    .build-steps-section{
+        display: none;
+    }
+
+
+    .label-slider{
+        display: block;
+        position: relative;
+        margin-top: 37px;
+    }
+    .label-slider .swiper-wrapper img{
+        height: 200px;
+        object-fit: contain;
+        align-self: center;
+     }
+     .swiper-label-prev{
+        position: absolute;
+        left:0px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+     }
+     .swiper-label-next{
+        position: absolute;
+        right:0px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+     }
+
+
+
+
+    .num-steps{
+        background: none;
+    }
+    .num-bg{
+        top: 19px;
+        left: 19px;
+    }
+    .num-card-bg img{
+        width: 198px;
+        height: 198px;
+    }
+    .num-bg img{
+        width: 159px;
+        height: 159px;
+    }
+    .num-bg .number{
+        font-size: 64px;
+    }
+    .build-steps-slider{
+        position: relative;
+        margin-top: 37px;
+        margin-bottom: 80px;
+    }
+    .desc-icon img{
+        display: none;
+    }
+    .swiper-prev{
+        position: absolute;
+        left: 0;
+        bottom: 4%;
+        z-index: 2;
+    }
+    .swiper-next{
+        position: absolute;
+        right: 0;
+        bottom: 4%;
+       
+        z-index: 2;
+    }
+    .most-outer-div{
+        position: relative;
+     }
+     .second-most-outer-div{
+        position: absolute;
+        top: 9px;
+        left: 10px;
+     }
+     .inner-icon{
+        position: absolute;
+        top: 2px;
+        left: 2px;
+     }
+     .intro-s-heading3{
+        font-size: 24px;
+        text-align: center;
+     }
+     .arrow-component-3 span{
+        font-size: 26px;
+     }
+    
+
+     /* <----------------------------------> */
+     .bottom-hs-gap-line{
+        display: none;
+     }
+     .right-intro-s1 p{
+        display: none;
+     }
+     .left-intro-s2-line1{
+        display: none;
+     }
+     .left-intro-s2-line2{
+        display: none;
+     }
+     .intro-section-2{
+        flex-direction: column;
+     }
+     .build-steps-bg-line{
+        display: none;
+     }
+     .banner-section{
+        border-radius: 60px;
+        background:url(./images/bannerimg-layer.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+        height: 163.354px;
+     }
+     .banner-s-h1{
+        font-size: 16px;
+     }
+     .banner-s-h2{
+        font-size: 24px;
+     }
+     
+    
 }
 
 
@@ -917,14 +1157,15 @@ margin-top: 100px;
  .hero-section-left-btn svg{
     display: none;
  }
- .hero-section-left-btn .btn{
-    padding: 17px 70px;
- }
+
  .bottom-hero-section{
     margin-top: 53px;
     height: 109px;
  }
  .bottom-hs-gap-line{
+    display: none;
+ }
+ .bottom-hero-section{
     display: none;
  }
  .arrow{
@@ -937,18 +1178,8 @@ margin-top: 100px;
     margin-bottom: 0;
     margin-top: 60px;
  }
- .right-intro-s1 p{
-    display: none;
- }
- .left-intro-s2-line1{
-    display: none;
- }
- .left-intro-s2-line2{
-    display: none;
- }
- .intro-section-2{
-    flex-direction: column;
- }
+
+
  .left-intro-s2 img{
     width: 336.79px;
     height: 358px;
@@ -973,7 +1204,9 @@ margin-top: 100px;
     margin-top: 51px;
     margin-bottom: 34px;
  }
-
+ .banner-section{
+    background-position: -200px;
+ }
  
  .right-intro-s2 .btn{
      padding: 20px 63px;
@@ -981,82 +1214,19 @@ margin-top: 100px;
  .intro-s-heading {
     font-size: 24px;
  }
- .slider-cards{
-    margin-top: 36px;
-    position: relative;
-    overflow-x: hidden;
-    transition: all 400ms ease;
-    width: 333px;
- }
 
- .slider-card{
-    min-width: 320px;
-    max-width: 100vw;
- }
- .slider-card-img img{
-    width: 190.923px;
-    height: 190.923px;
- }
- .slider-card-img-bg svg{
-    width: 219px;
-    height: 219px;
- }
 
- .prev-button{
-   position: absolute;
-   left: 0;
-   top: 50%;
-   transform: translateY(-50%);
-   display: block;
- }
- .next-button{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
- }
  
- .most-outer-div{
-    position: relative;
- }
- .second-most-outer-div{
-    position: absolute;
-    top: 9px;
-    left: 10px;
- }
- .inner-icon{
-    position: absolute;
-    top: 2px;
-    left: 2px;
- }
 
 
 
- .build-steps-bg-line{
-    display: none;
- }
- .banner-section{
-    border-radius: 60px;
-    background:url(./images/bannerimg-layer.png);
-    background-size: cover;
-    background-position:-200px;
-    background-repeat: no-repeat;
-    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
-    height: 163.354px;
- }
- .banner-s-h1{
-    font-size: 16px;
- }
- .banner-s-h2{
-    font-size: 24px;
- }
+
+
+
  .scroll-btn{
     display: none;
  }
- .intro-s-heading3{
-    font-size: 24px;
- }
+
  .intro-section-3{
     width: 100%;
     align-items: center;
@@ -1074,10 +1244,7 @@ margin-top: 100px;
  form .form-heading{
     font-size: 24px;
  }
- .form-title{
-    font-size: 24px;
-    margin-bottom: 36px;
- }
+
  .personal-info1{
     gap: 22px;
  }
