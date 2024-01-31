@@ -285,7 +285,7 @@ max-width: 100%;
 }
 .slider-wrapper{
     display:flex;
-    gap: 17px;
+    gap: 14px;
     transition: all 400ms ease;
     margin-left: 7px;
 }
@@ -297,6 +297,7 @@ max-width: 100%;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 40px;
+    
 }
 .slider-card-img img{
     border-radius: 50%;
@@ -548,6 +549,9 @@ form input::placeholder{
 #other-info-guide{
     padding-bottom: 166px;
 }
+.heading-b-xborder svg{
+   width: 90vw;
+}
 
 footer{
     display: flex;
@@ -709,6 +713,18 @@ font-size: 45px;
 .intro-section-2{
     gap: 50px;
 }
+.arrow img:first-child{
+    width: 80%;
+}
+.arrow img:last-child{
+    width: 30%;
+}
+.arrow img:last-child{
+    transform: translateX(-35px);
+}
+.arrow {
+    transform: translateY(6px);
+}
 .left-intro-s2 img{
     width: 424px;
     height: 457px;
@@ -740,6 +756,21 @@ font-size: 45px;
 }
 .intro-s-heading3{
     font-size: 30px;
+}
+.arrow-component-3 .arrow img:first-child{
+    width: 100px;
+}
+.arrow-component-3 .arrow img:last-child{
+    width: 33%;
+}
+.arrow-component-3 .arrow img:last-child{
+    transform: translateX(-30px);
+}
+.arrow-component-3 .arrow{
+   margin-top: 10px;
+}
+.arrow-component-3 .arrow {
+    transform:translateX(-20px);
 }
 
 .num-bg{
@@ -791,7 +822,6 @@ margin-top: 100px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-   
 }
 .footer-bg-line1{
     top: -10rem;
@@ -956,11 +986,12 @@ margin-top: 100px;
     position: relative;
     overflow-x: hidden;
     transition: all 400ms ease;
+    width: 333px;
  }
 
  .slider-card{
-    width: 100%;
     min-width: 320px;
+    max-width: 100vw;
  }
  .slider-card-img img{
     width: 190.923px;

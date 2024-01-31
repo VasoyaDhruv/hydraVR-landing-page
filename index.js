@@ -31,7 +31,7 @@ function changeSlide(direction) {
     currentIndex = 0;
   }
 
-  const transformValue = -currentIndex * cardWidth;
+  const transformValue = -currentIndex * 333;
   sliderWrapper.style.transform = `translateX(${transformValue}px)`;
 }
   
