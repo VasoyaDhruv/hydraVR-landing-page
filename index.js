@@ -14,4 +14,33 @@ window.addEventListener('scroll', () => {
         mobilenav.classList.remove("scrolled");
     }
 })
- 
+
+
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slider-card');
+const totalSlides = slides.length;
+const sliderWrapper = document.querySelector('.slider-wrapper');
+const cardWidth = slides[0].offsetWidth;
+
+function changeSlide(direction) {
+  currentIndex += direction;
+
+  if (currentIndex < 0) {
+    currentIndex = totalSlides - 1;
+  } else if (currentIndex >= totalSlides) {
+    currentIndex = 0;
+  }
+
+  const transformValue = -currentIndex * cardWidth;
+  sliderWrapper.style.transform = `translateX(${transformValue}px)`;
+}
+  
+// var swiper = new Swiper(".build-steps-section", {
+//     slidesPerView: 1,
+//     spaceBetween: 30,
+//     loop: true,
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//   });
