@@ -84,7 +84,6 @@ body{
     font-size: 40px;
     font-weight: 700;
     margin: 0;
-    
 }
 .left-hero-section h2 span{
     background: linear-gradient(92deg, #C0B7E8 -1.02%, #8176AF 36.25%);
@@ -101,13 +100,15 @@ body{
 }
 .hero-section-left-btn{
     gap: 11px;
-    
+    z-index: 2;
 }
 .left-hs-line{
+    z-index: -1;
     position: absolute;
     top: 14.5rem;
     left: -120px;
 }
+
 .right-hero-section{
     margin-top: 260px;
 }
@@ -123,7 +124,6 @@ body{
     height: 426px;
     object-fit: cover;
     object-position: 0px -60px;
-    z-index: 1;
 
 }
 .right-hs-line1{
