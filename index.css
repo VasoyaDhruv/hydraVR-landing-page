@@ -692,6 +692,7 @@ footer{
     padding: 10px 3.5%;
     transition: all 400ms ease;
 }
+
 .menu-icon img{
     width: 50px;
 }   
@@ -1185,7 +1186,12 @@ margin-top: 100px;
     .footer-bg-line2{
         top: 0rem;
     }
-  
+    .footer-first-section{
+        margin-bottom: 0;
+    }
+    .footer-content-last-section{
+        margin-top: 0;
+    }
 }
 
 
@@ -1369,6 +1375,10 @@ margin-top: 100px;
     font-size: 14px;
  }
 
+
+.footer-bg-line2{
+    top: 0rem;
+}
  .footer-last-text{
     letter-spacing: 1.82px;
     font-size: 14px;
